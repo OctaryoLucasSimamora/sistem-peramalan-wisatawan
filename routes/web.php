@@ -64,6 +64,15 @@ Route::post('/forecast/processAll', [ForecastController::class, 'processAll'])->
     Route::get('/evaluation/{id}/export-pdf', [EvaluationController::class, 'exportPdf'])->name('evaluation.exportPdf');
 });
 
+// Analysis Routes
+Route::middleware(['auth'])->group(function () {
+    Route::post('/analysis/save', [AnalysisController::class, 'store'])->name('analysis.store');
+    Route::get('/analysis/history', [AnalysisController::class, 'history'])->name('analysis.history');
+    Route::get('/analysis/{id}', [AnalysisController::class, 'show'])->name('analysis.show');
+    Route::delete('/analysis/{id}', [AnalysisController::class, 'destroy'])->name('analysis.destroy');
+});
+
+
 // ==================== TEMPORARY ROUTES (Hapus setelah digunakan) ====================
 
 // Route untuk create user (temporary - hapus setelah user dibuat)

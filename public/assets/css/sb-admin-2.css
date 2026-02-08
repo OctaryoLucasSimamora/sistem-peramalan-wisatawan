@@ -11279,3 +11279,85 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
+
+/* Styling untuk kartu analisis */
+.analysis-card {
+    border-left: 4px solid #4e73df;
+    transition: all 0.3s ease;
+}
+
+.analysis-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.interpretation-box {
+    background: linear-gradient(135deg, #f8f9fc 0%, #e3e6f0 100%);
+    border-left: 4px solid #36b9cc;
+    padding: 15px;
+    border-radius: 0 5px 5px 0;
+}
+
+.model-comparison {
+    background: linear-gradient(135deg, #f6f9ff 0%, #e9f7fe 100%);
+    border: 1px solid #cce5ff;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.recommendation-high {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.recommendation-medium {
+    background-color: #fff3cd;
+    border-color: #ffeaa7;
+}
+
+.recommendation-low {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+/* Style untuk tabel detail perhitungan */
+.table-detail-perhitungan {
+    font-size: 0.85rem;
+}
+
+.table-detail-perhitungan th {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-detail-perhitungan td {
+    text-align: right;
+    vertical-align: middle;
+}
+
+.table-detail-perhitungan td:first-child {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Highlight untuk baris terakhir */
+.table-detail-perhitungan tbody tr:last-child {
+    background-color: #e8f5e8;
+    font-weight: bold;
+}
+
+/* Style untuk rumus */
+.formula-card {
+    border-left: 4px solid #3498db;
+    margin-bottom: 10px;
+}
+
+.formula-card .card-body {
+    padding: 8px 12px;
+}
+
+.formula-card small {
+    line-height: 1.4;
+}

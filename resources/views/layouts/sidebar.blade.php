@@ -38,6 +38,15 @@
         <span>Peramalan</span>
     </a>
 </li>
+{{-- Analisis Menu --}}
+@if(request()->is('analysis*') || request()->is('forecast*'))
+<li class="nav-item {{ request()->is('analysis*') ? 'active' : '' }}">
+    <a class="nav-link" href="{{ route('analysis.history') }}">
+        <i class="fas fa-chart-line"></i>
+        <span>History Analisis</span>
+    </a>
+</li>
+@endif
 
 <!-- Nav Item - Evaluasi -->
 <li class="nav-item {{ request()->routeIs('evaluation.*') ? 'active' : '' }}">
